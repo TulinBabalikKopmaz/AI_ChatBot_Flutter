@@ -13,7 +13,7 @@ late Size mq;
 
 // Google Gemini API Key kullanmak için global değişken atayalım. Aşağıdaki adresten alabiliriz.
 // https://aistudio.google.com/app/apikey
-String apiKey = '';
-String projeNo = '';
+String apiKey = 'Key yaz';
+String projeNo = 'proje No';
 
 // Uygulamada kullanılacak global değişkenleri burada tanımladık.
