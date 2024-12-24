@@ -1,0 +1,104 @@
+name: ai_assistant
+description: "Yapay Zeka Asistani, Tülin Babalik Kopmaz"
+
+# Bu dosyada yapilan her değişiklikte terminale "flutter pub upgrade" yaz.
+
+publish_to: 'none' 
+
+# App Version (Kendi yaptığımız uygulamanın versiyonu)
+# 1 (MAJOR): Bu, uygulamanın ilk büyük sürümü olduğunu gösterir.
+# 0 (MINOR): Küçük özellikler eklenmemiş veya yeni bir küçük sürüm yayınlanmamış.
+# 0 (PATCH): sürüm de (küçük düzeltmeler, hata gidermeleri).
+# +1 (BUILD_NUMBER): Her derleme (build) veya güncelleme sırasında artırılır.
+version: 1.0.0+1
+
+# Bu, projenin hangi Dart sürümleriyle uyumlu olduğunu ifade eder.
+# >=3.4.3: Proje, Dart SDK'nın en az 3.4.3 sürümünü gerektirir. Bu sürümden daha eski bir Dart SDK ile çalışmaz.
+# <4.0.0: Dart SDK'nın 4.0.0 sürümünden önceki tüm sürümleri destekler. Ancak 4.0.0 ve sonrası sürümlerle uyumlu değildir.
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+# Dependencies 
+# Projenizin çalışması için gerekli olan bağımlılıkların tanımlandığı alandır.
+dependencies:
+
+  # Bağımlılığın doğrudan Flutter SDK'dan sağlandığını belirtir. Bu, herhangi bir versiyon numarası yerine SDK'nın tamamını kullanmayı ifade eder.
+  flutter:
+    sdk: flutter
+
+  # CupertinoIcons class iOS tarzında ikonlar içindir. Flutter'da iOS tarzı simgeler (icons) sağlayan bir paketdir.
+  cupertino_icons: ^1.0.8
+
+  # lottie animasyonlarını kullanabilmemiz için (hareket eden resimler için)
+  lottie: ^3.1.2
+
+  # getx durum yönetimi için paket, Özellikle navigation kısımlarını daha kısa ve güzel yazabilmek için
+  get: ^4.6.6
+
+  # Çeşitli geçiş animasyonları kullana bilmek için
+  flutter_animate: ^4.5.0
+
+  # Cahtle yazışırkenki animasyonlar için
+  animated_text_kit: ^4.2.2
+
+  # Google Gemini Ai API bağlantısını yapmak ve kullanabilmek için
+  google_generative_ai: ^0.4.3
+
+  # Google Translate bağlantısını yapmak ve kullanabilmek için (Bu biri tarafından yazılmış parasız kullanabilmek için)
+  translator_plus: ^1.0.1
+
+  # App Write Database (dinamik olarak API Key alabilmek için)
+  # apikey olarak keyleri tutuyoz mesela bir kullanıcı farklı cihazdanda girse aynı API anahtarını kullanarak uygulamayı çalıştırır.  
+  appwrite: ^12.0.4
+
+# dev_dependencies, geliştirme sırasında (development) kullanılan bağımlılıkların tanımlandığı bir alandır.
+# Bu bağımlılıklar uygulamanın çalışması için değil, yalnızca geliştirme ve test işlemleri için gereklidir.
+dev_dependencies:
+
+  # flutter_test, Flutter SDK ile birlikte gelen ve widget, entegrasyon ve birim testi yapmayı sağlayan bir kütüphanedir.
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+  # Uygulamanın logosu için gereklidir.
+  icons_launcher: ^2.1.7
+
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # Böyle yamamızın nedeni tüm resimlere erişebilmektir.
+  assets:
+    - assets/images/
+    - assets/lottie/
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
