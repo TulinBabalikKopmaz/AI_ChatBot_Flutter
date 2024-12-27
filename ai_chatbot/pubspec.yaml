@@ -64,6 +64,17 @@ dev_dependencies:
   # Uygulamanın logosu için gereklidir.
   icons_launcher: ^2.1.7
 
+# Uygulamanın logosu için gereklidir. Bunu yazdıktan sonra
+# Terminale :  " dart run icons_launcher:create " yaz
+# flutter pub get yaz.
+icons_launcher:
+  image_path: "assets/images/logo.png"
+  platforms:
+    android:
+      enable: true
+    ios:
+      enable: true
+   
 flutter:
 
   # The following line ensures that the Material Icons font is
