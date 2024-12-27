@@ -84,7 +84,6 @@ class HomeCard extends StatelessWidget {
 
                       Container( // Lottie animasyonu için bir konteyner:
                         width: mq.width * .4, // Konteynerin genişliği ekran genişliğinin %40'ı.
-                        height: mq.height*.23,
                         padding: homeType.padding, // Belirtilen dolgu (padding) ekleniyor.
                         child: Lottie.asset('assets/lottie/${homeType.lottie}'), // Lottie animasyonu belirtilen dosyadan yükleniyor.
                       ),
