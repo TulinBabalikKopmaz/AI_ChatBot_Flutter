@@ -39,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
       // Body: Sayfanın ana içeriği.
       body: ListView(
         padding: EdgeInsets.symmetric(
-            horizontal: mq.width * .04, // Sağ ve sol kenarlardan ekran genişliğinin %4'ü kadar boşluk bırakıyor.
+            horizontal: mq.width * .05, // Sağ ve sol kenarlardan ekran genişliğinin %5'ü kadar boşluk bırakıyor.
             vertical: mq.height * .025 // Üst ve alt kenarlardan ekran yüksekliğinin %2.5'i kadar boşluk bırakıyor.
         ),
         // HomeType enum'undaki tüm değerler üzerinden geçiyor ve her biri için bir HomeCard widget'ı oluşturuyor.
