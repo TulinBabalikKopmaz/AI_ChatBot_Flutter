@@ -31,7 +31,7 @@ extension MyHomeType on HomeType {
   // Her bir HomeType için uygun padding değerleri döndürülüyor.
   EdgeInsets get padding => switch (this) {
         HomeType.aiChatBot => EdgeInsets.zero, // AI ChatBot için padding yok.
-        HomeType.aiTranslator => const EdgeInsets.all(20), // Translator için tüm kenarlarda 20 piksel boşluk.
+        HomeType.aiTranslator => const EdgeInsets.all(25), // Translator için tüm kenarlarda 20 piksel boşluk.
       };
 
 
