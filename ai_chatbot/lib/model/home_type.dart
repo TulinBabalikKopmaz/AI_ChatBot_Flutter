@@ -12,7 +12,7 @@ extension MyHomeType on HomeType {
   // Home scrende yer alan cardların üzerinde yazan başlıklar.
   String get title => switch (this) {
         HomeType.aiChatBot => 'AI ChatBot',
-        HomeType.aiTranslator => 'Language Translator',
+        HomeType.aiTranslator => 'Translator',
       };
 
   // Her bir HomeType için uygun Lottie animasyon dosyası döndürülüyor.
@@ -31,7 +31,7 @@ extension MyHomeType on HomeType {
   // Her bir HomeType için uygun padding değerleri döndürülüyor.
   EdgeInsets get padding => switch (this) {
         HomeType.aiChatBot => EdgeInsets.zero, // AI ChatBot için padding yok.
-        HomeType.aiTranslator => const EdgeInsets.all(30), // Translator için tüm kenarlarda 20 piksel boşluk.
+        HomeType.aiTranslator => const EdgeInsets.all(20), // Translator için tüm kenarlarda 20 piksel boşluk.
       };
 
 
