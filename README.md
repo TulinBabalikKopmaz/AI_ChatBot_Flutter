@@ -16,3 +16,7 @@ ai_chatbot/helper dosya yolundaki global dosyası içerisindeki
 ![Home_Screen](https://github.com/user-attachments/assets/05f0bd71-6129-4323-ab62-47ce4fffdb3a)
 ![Chatbot_Feature](https://github.com/user-attachments/assets/c947196c-f976-4628-88c9-222447da7894)
 ![Translator_Feature](https://github.com/user-attachments/assets/8f9fec34-e2b5-4d6d-989b-50803ed846f6)
+
+## Uygulama
+
+![chatbot](https://github.com/user-attachments/assets/c1438f43-8347-46f5-91fb-36778e96a469)
