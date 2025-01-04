@@ -47,10 +47,6 @@ dependencies:
   # Google Translate bağlantısını yapmak ve kullanabilmek için (Bu biri tarafından yazılmış parasız kullanabilmek için)
   translator_plus: ^1.0.1
 
-  # App Write Database (dinamik olarak API Key alabilmek için)
-  # apikey olarak keyleri tutuyoz mesela bir kullanıcı farklı cihazdanda girse aynı API anahtarını kullanarak uygulamayı çalıştırır.  
-  appwrite: ^12.0.4
-
 # dev_dependencies, geliştirme sırasında (development) kullanılan bağımlılıkların tanımlandığı bir alandır.
 # Bu bağımlılıklar uygulamanın çalışması için değil, yalnızca geliştirme ve test işlemleri için gereklidir.
 dev_dependencies:
